@@ -1,0 +1,25 @@
+<footer class="footer">
+    <div class="footer-wrap container">
+        <div class="footer-copy">
+            {var $year = '' | date : 'Y'}
+            ©2012—{$year}
+          <a href="https://alexlenk.ru" class="footer-copy__link">AlexLenk.ru</a> опытный фронтенд разработчик - HTML CSS JavaScript кодер.
+          <br>
+          Место расположение город Москва и&nbsp;Московская область
+        </div>
+
+        <div>
+          <a href="https://www.liveinternet.ru/click" target="_blank" rel="nofollow">
+            <img id="licnt63F7" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7" alt="live internet">
+          </a>
+          <script>(function (d, s) {
+            d.getElementById("licnt63F7").src =
+              "https://counter.yadro.ru/hit?t52.6;r" + escape(d.referrer) +
+              ((typeof (s) == "undefined") ? "" : ";s" + s.width + "*" + s.height + "*" +
+                (s.colorDepth ? s.colorDepth : s.pixelDepth)) + ";u" + escape(d.URL) +
+              ";h" + escape(d.title.substring(0, 150)) + ";" + Math.random()
+          })
+          (document, screen)</script>
+        </div>
+    </div>
+</footer>

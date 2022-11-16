@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+{include 'head'}
+</head>
+<body>
+{include 'nav'}
+{include 'main-header'}
+{include 'resume'}
+{include 'work'}
+
+{$_modx->resource.content}
+
+
+<div class="contacts section-layer" id="contacts">
+  <div class="container">
+    <h2 class="section-layer__title">Связь со мною</h2>
+
+    <div class="contacts__section">
+{'contact_form' | chunk : [
+'form' => 'form.contact_form',
+'tpl' => 'tpl.contact_form',
+'subject' => 'Сообщение с сайта ' ~ $_modx->config.http_host,
+'validate' => 'name:required,email:required,message:required,check:required'
+]}
+
+      <div class="contact__col">
+        <div class="contacts__requisites-item">
+          <div class="contacts__requisites-decor">
+            <svg class="contacts__requisites-icon">
+              <use xlink:href="img/sprites.svg#phone"></use>
+            </svg>
+          </div>
+          <a href="tel:+79687409646" rel="nofollow" target="_blank" class="contacts__requisites-link">
+            +7 (968) 740 96-46
+          </a>
+        </div>
+
+        <div class="contacts__requisites-item">
+          <div class="contacts__requisites-decor">
+            <svg class="contacts__requisites-icon">
+              <use xlink:href="img/sprites.svg#email"></use>
+            </svg>
+          </div>
+          Адрес: г. Москва, ул. Поклонная, 3, вход Е1
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{include 'footer'}
+{include 'scripts'}
+</body>
+</html>
