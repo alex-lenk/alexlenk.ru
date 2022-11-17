@@ -94,6 +94,8 @@ ht.access
 /public_html/a1m0qho5sgbxwe/
 /public_html/panel/
 
+/public_html/assets/cache_image/
+/public_html/assets/images/
 !/public_html/assets/components/
 /public_html/assets/components/*
 !/public_html/assets/components/mycomponent/
