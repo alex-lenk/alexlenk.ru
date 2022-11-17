@@ -1,7 +1,7 @@
 <base href="{$_modx->config.site_url}">
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{$_modx->resource.pagetitle}</title>
 {if $_modx->resource.searchable}<meta name="robots" content="index, follow">
 {else}<meta name="robots" content="noindex, nofollow">{/if}
@@ -10,16 +10,18 @@
 {else}{var $description = $_modx->resource.description}{/if}
 <meta name="description" content="{$description | replace :' "':' «' | replace :'"':'»'}">
 
-<link rel="stylesheet" href="/css/styles.css?ver=2.4">
+<link rel="stylesheet" href="assets/css/styles.min.css?ver=1.0">
 
-<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?ver=2.0">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?ver=2.0">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?ver=2.0">
-<link rel="manifest" href="/favicon/site.webmanifest">
-<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?ver=2.0" color="#237bbe">
-<link rel="shortcut icon" href="/favicon/favicon.ico?ver=2.0">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-config" content="/favicon/browserconfig.xml?ver=2.0">
-<meta name="theme-color" content="#237bbe">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+<link rel="manifest" href="assets/favicons/site.webmanifest">
+<link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#151c28">
+<link rel="shortcut icon" href="assets/favicons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="AlexIank">
+<meta name="application-name" content="AlexIank">
+<meta name="msapplication-TileColor" content="#151c28">
+<meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
+<meta name="theme-color" content="#151c28">
 
 {if $_modx->resource.img}<meta property="og:image" content="{$_modx->config.site_url | rtrim : '/'}{$_modx->resource.img | phpthumbon : "w=400&h=280"}" />{/if}

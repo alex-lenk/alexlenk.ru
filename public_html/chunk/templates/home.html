@@ -1,55 +1,50 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-{include 'head'}
-</head>
-<body>
-{include 'nav'}
-{include 'main-header'}
-{include 'resume'}
-{include 'work'}
+{include 'header'}
 
-{$_modx->resource.content}
+    <div class="home js-home">
+      <div class="home__content">
+        <div class="home__content-name">Александр Янковой</div>
 
+        <h1 class="home__content-title">Frontend developer</h1>
 
-<div class="contacts section-layer" id="contacts">
-  <div class="container">
-    <h2 class="section-layer__title">Связь со мною</h2>
+        <div class="home__content-phrase">
+          Пишу легкий, чистый
+          <span class="home__content-decor">&lt;code&gt;</span>
 
-    <div class="contacts__section">
-{'contact_form' | chunk : [
-'form' => 'form.contact_form',
-'tpl' => 'tpl.contact_form',
-'subject' => 'Сообщение с сайта ' ~ $_modx->config.http_host,
-'validate' => 'name:required,email:required,message:required,check:required'
-]}
-
-      <div class="contact__col">
-        <div class="contacts__requisites-item">
-          <div class="contacts__requisites-decor">
-            <svg class="contacts__requisites-icon">
-              <use xlink:href="img/sprites.svg#phone"></use>
-            </svg>
+          <div class="home__content-text">
+            // Чтобы ваш сайт работал быстро и&nbsp;на&nbsp;полную.
           </div>
-          <a href="tel:+79687409646" rel="nofollow" target="_blank" class="contacts__requisites-link">
-            +7 (968) 740 96-46
-          </a>
         </div>
 
-        <div class="contacts__requisites-item">
-          <div class="contacts__requisites-decor">
-            <svg class="contacts__requisites-icon">
-              <use xlink:href="img/sprites.svg#email"></use>
-            </svg>
-          </div>
-          Адрес: г. Москва, ул. Поклонная, 3, вход Е1
-        </div>
+        <a href="/portfolio" class="btn btn__primary home__content-btn js-home__content-btn">Портфолио</a>
       </div>
+
+      <aside class="home__card">
+        <div class="home__card-top">
+          <div class="home__card-projects">96 projects</div>
+          <div class="home__card-info">1 455 commits</div>
+        </div>
+
+        <div class="home__card-container">
+          <pre class="home__card-code">
+            <span class="code-tag">&#60;header&#62;</span>
+              <span class="code-tag">&#60;div id=</span><span class="code-id">"coder"</span><span class="code-tag">&#62;</span>
+                <span class="code-tag">&#60;h1&#62;</span><span class="code-title"> Technology stack </span><span class="code-tag">&#60;/h1&#62;</span>
+                <span class="code-tag">&#60;ul&#62;</span>
+                  <span class="code-tag">&#60;li&#62;</span> <span class="code-text">HTML</span> <span class="code-tag">&#60;/li&#62;</span>
+                  <span class="code-tag">&#60;li&#62;</span> <span class="code-text">CSS</span> <span class="code-tag">&#60;/li&#62;</span>
+                  <span class="code-tag">&#60;li&#62;</span> <span class="code-text">JavaScript</span> <span class="code-tag">&#60;/li&#62;</span>
+                  <span class="code-tag">&#60;li&#62;</span> <span class="code-text">React.js</span> <span class="code-tag">&#60;/li&#62;</span>
+                  <span class="code-tag">&#60;li&#62;</span> <span class="code-text">Vue.js</span> <span class="code-tag">&#60;/li&#62;</span>
+                  <span class="code-tag">&#60;li&#62;</span> <span class="code-text">Node.js</span> <span class="code-tag">&#60;/li&#62;</span>
+                  <span class="code-tag">&#60;li&#62;</span> <span class="code-text">Webpack.js</span> <span class="code-tag">&#60;/li&#62;</span>
+                  <span class="code-tag">&#60;li&#62;</span> <span class="code-text">Gulp.js</span> <span class="code-tag">&#60;/li&#62;</span>
+                  <span class="code-tag">&#60;li&#62;</span> <span class="code-text">Git</span> <span class="code-tag">&#60;/li&#62;</span>
+                <span class="code-tag">&#60;/ul&#62;</span>
+              <span class="code-tag">&#60;/div&#62;</span>
+            <span class="code-tag">&#60;/header&#62;</span>
+          </pre>
+        </div>
+      </aside>
     </div>
-  </div>
-</div>
 
 {include 'footer'}
-{include 'scripts'}
-</body>
-</html>
