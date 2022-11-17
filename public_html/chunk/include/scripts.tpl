@@ -1,4 +1,4 @@
-<script defer src="/js/scripts.js?ver=2.2"></script>
+<script src="/assets/js/app.min.js?ver=1.2"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script defer src="https://www.googletagmanager.com/gtag/js?id=G-04D3S549PV"></script>
